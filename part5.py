@@ -18,3 +18,12 @@ Enter a number or enter 0 to stop: 0
 Number of evens: 3
 
 '''
+enter = int(input("Enter a number or enter 0 to stop: "))
+evenCounter = 0
+
+while enter != 0:
+  if enter % 2 == 0:
+    evenCounter += 1
+  enter = int(input("Enter a number or enter 0 to stop: "))
+
+print(evenCounter)
